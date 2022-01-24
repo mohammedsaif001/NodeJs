@@ -1,0 +1,14 @@
+{
+  "name": "8-express",
+  "version": "1.0.0",
+  "description": "This is a PAckage created while learning nodeJs",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "mohammedsaif001",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.2"
+  }
+}
