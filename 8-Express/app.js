@@ -1,7 +1,23 @@
 //npm install express
 const express = require("express");
+const path = require('path');
 const app = express();
 port = 80;
+
+// Serving Static Files
+app.use('/static',express.static('static'));
+
+//Set the template engine as pug
+app.set('view engine','pug');
+
+//Set the Views Directory
+app.set('views',path.join(__dirname,'views'));
+
+//Our Pug Demo Endpoint
+app.get('/demo',(req, res) => {
+    res.status(200).render('demo', { title: 'Hey', message: 'Hello there! This is in Pug' })
+  });
+
 app.get("/",(req,res)=>{
     res.send("HomePage");
 });

@@ -9,6 +9,8 @@
   "author": "mohammedsaif001",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.2"
+    "express": "^4.17.2",
+    "nodemon": "^2.0.15",
+    "pug": "^3.0.2"
   }
 }
